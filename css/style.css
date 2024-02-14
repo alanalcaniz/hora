@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(60deg, #000000, #141414);
+  color: #f1f1f1;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0 0 0 0;
+  line-height: .75;
+  color: #ffffff;
+  display: inline-block;
+}
+
+h2{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  color: #b8b8b8;
+  font-size: 25px;
+  margin-top: 7px;
+}
+
+.boton{
+  background: linear-gradient(60deg, #3232327d, #5959597c);
+  padding: 20px 15px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.boton p{
+  font-family: sans-serif;
+}
+
+.boton-footer{
+  margin: 5px;
+}
+
+.contenedor-flex{
+  box-sizing: content-box;
+}
+
+header{
+  height: 10vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.boton-registrarse{
+  height: min-content;
+  margin-right: 20px;
+
+}
+
+.contenedor-fecha-hora{
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.contenedor-fecha{
+  
+}
+
+.contenedor-hora{
+  
+}
+
+footer{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-sobre-mi{
+  width: 750px;
+  text-align: left;
+  margin: 15px auto 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+
+}
