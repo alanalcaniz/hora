@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan's Centre</title>
+    <title>MyNotes</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,26 +18,54 @@
     <div class="contenedor-flex">
       <header>
         <div class="boton-registrarse boton">
-          <p>Registrarse</p>
+          <img class="svg-image" src="img/account_circle_white_24dp.svg" alt="">
         </div>
       </header>
       <div class="contenedor-fecha-hora">
-        <div class="contenedor-fecha">
-          <H2>Lunes, 3 de Marzo de 2024</H2>
-        </div>
-        <div class="contenedor-hora">
-          <h1>19:12:58</h1>
+        <div id="fecha"></div>
+        <div id="reloj"></div>
+        <script src="js/scripthora.js"></script>
+        <div id="contenedor-editar">
+          <div id="contenedor-editar-header">
+            <div id="contenedor-editar-cerrar"  onclick="ocultareditar();">X</div>
+          </div>
+          <div id="contenedor-editar-body">
+            <div class="activar-desactivar">
+              <div class="bola-activar-desactivar">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer>
-        <div class="boton-portfolio boton boton-footer">
-          <p>Portfolio</p>
+        <div class="footer-izquierdo">
+          <a href="https://alanalcaniz.com" target="_blank">
+            <div class="boton-portfolio boton boton-footer boton-izquierdo">
+              <img class="svg-image" src="img/home_white_24dp.svg" alt="home">
+            </div>
+          </a>
+          <div class="boton-portfolio boton boton-footer boton-izquierdo"  onclick="mostrareditar();">
+            <img id="editar-pagina" class="svg-image" src="img/format_paint_FILL0_wght400_GRAD0_opsz24.svg" alt="edit">
+          </div>
+          <script>
+            function mostrareditar(){
+              document.getElementById('contenedor-editar').style.display = 'flex';
+            }
+
+            function ocultareditar(){
+                document.getElementById('contenedor-editar').style.display = 'none';
+            }
+
+          </script>
         </div>
-        <div class="boton-notas boton boton-footer">
-          <p>Notas</p>
-        </div>
-        <div class="boton-calendario boton boton-footer">
-          <p>Calendario</p>
+        <div class="footer-derecho">
+          <div class="boton-notas boton boton-footer boton-derecho">
+            <img class="svg-image" src="img/edit_white_24dp.svg" alt="">
+          </div>
+          <div class="boton-calendario boton boton-footer boton-derecho">
+            <img class="svg-image" src="img/calendar_month_white_24dp.svg" alt="">
+          </div>
         </div>
       </footer>
     </div>
